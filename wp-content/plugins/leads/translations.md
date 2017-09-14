@@ -1,0 +1,1 @@
+https://www.inboundnow.com/translate-inbound-now/

@@ -1,0 +1,103 @@
+/*
+
+	Basic theme typography styles
+
+*/
+body, input, select, textarea, button {
+	font-size: @fontSize;
+	line-height: @lineHeight;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: @screenTablet) {
+	body, input, select, textarea, button {
+		font-size: 	18em / 14em; // 18px
+	}
+}
+
+h1, h2, h3 {
+	margin: 0;
+	line-height: 1em;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
+}
+
+h1 {
+	font-size: 24em / 14em; // 24px
+	line-height: 1.125;
+	letter-spacing: -0.04em;
+}
+
+h2 {
+	font-size: 	18em / 14em; // 18px
+	letter-spacing: -0.03em;
+	line-height: 1.25;
+}
+
+h3 {
+	font-size: 1em; // 14px
+	line-height: 1.5em;
+}
+
+@media (min-width: @screenTablet) {
+	h1 {
+		font-size: 2em; // 36px
+		line-height: 1.15;
+	}
+
+	h2 {
+		font-size: 1.5em; // 24px
+	}
+
+	h3 {
+		font-size: 1em; // 18px
+	}
+}
+
+div h1:first-of-type,
+div h2:first-of-type,
+div h3:first-of-type {
+	margin-top: 0;
+}
+
+p {
+	margin: 1em 0;
+}
+
+pre {
+	line-height: 1em;
+}
+
+ul, ol {
+	margin: 1em 0;
+	padding: 0 0 0 1.4em;
+}
+
+ul {
+	padding: 0 0 0 1.2em;
+}
+
+ul.inline,
+ol.inline {
+	padding: 0;
+}
+
+.inline li {
+	display: inline;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+}
+
+a:not([href]) {
+	cursor: pointer;
+}

@@ -1,0 +1,233 @@
+/*
+
+    Basic theme styles
+
+	#. Global styles
+	#. Buttons & form styles
+    #. Menus styles
+    #. Sections and cards
+    #. Footer
+    #. Media Queries
+
+*/
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+/*
+
+	Global styles
+
+*/
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+/*
+
+	Buttons and form styles
+
+*/
+.btn,
+.btn:visited {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 3em;
+    padding: 0 1em;
+    line-height: 3.3em;
+    text-transform: uppercase;
+    background-color: @colorWhite;
+    color: @colorBlack;
+    .transition();
+
+    &:hover {
+        background-color: @colorBlack;
+        color: @colorWhite;
+        .transition();
+    }
+}
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+/*
+
+	Header logo
+
+*/
+.header-logo {
+    padding-top: 1.7em;
+}
+/*
+
+	Primary Menu
+
+*/
+.main-navigation {
+    position: relative;
+    height: 5em;
+    padding-top: 1.5em;
+
+    &.toggled {
+        ul {
+            display: block;
+        }
+    }
+
+    .menu-toggle {
+        float: right;
+        display: block;
+    }
+
+    ul {
+        float: right;
+        display: none;
+        position: absolute;
+        margin-top: 43px;
+        background-color: white;
+        padding: 1em;
+
+        li {
+            padding-left: 1em;
+            width: 100%;
+            text-align: right;
+        }
+    }
+}
+
+.menu-footer-menu-container {
+    ul {
+        list-style: none;
+
+        li {
+            float: left;
+            padding-right: 1em;
+        }
+    }
+}
+////////////////////////////////////////////////
+/*
+
+  sections and content
+
+*/
+section {
+    // text alignment
+    &.align-center {
+        text-align: center;
+    }
+
+    &.align-left {
+        text-align: left;
+    }
+
+    &.align-right {
+        text-align: right;
+    }
+    // background colors
+    &.background-grey {
+        background-color: @colorGray;
+    }
+
+    &.background-black {
+        background-color: @colorBlack;
+    }
+
+    &.background-white {
+        background-color: @colorWhite;
+    }
+    // background images
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // font color
+    &.text-white {
+        color: @colorWhite;
+    }
+
+    &.text-black {
+        color: @colorBlack;
+    }
+}
+
+.site {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -@footerHeight;
+
+    &:after {
+        content: "";
+        display: block;
+        /* equal to footer height */
+        height: @footerHeight;
+    }
+}
+
+.section-top {
+    text-align: center;
+    height: 30em;
+}
+//SECTION CARD AND SECTION TOP
+
+.section-card,
+.section-top {
+    .flex-block();
+    .flex-direction(column);
+    .justify-content(center);
+    .align-items(center);
+}
+
+.section-card {
+    .container {
+        padding: 2em;
+    }
+}
+////////////////////////////////////////////////
+/*
+
+  Footer
+
+*/
+footer {
+    height: @footerHeight;
+}
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+/*
+
+  Media Queries
+
+*/
+@media (min-width: @screenTablet) {
+    .main-navigation {
+        .menu-toggle {
+            display: none;
+        }
+
+        ul {
+            display: block;
+            position: relative;
+            background-color: transparent;
+            margin-top: 0;
+
+            li {
+                width: auto;
+            }
+        }
+    }
+}

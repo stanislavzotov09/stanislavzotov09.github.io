@@ -1,0 +1,41 @@
+// Flexbox
+.flex-block() {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-inline() {
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}
+
+.flex-flow(@direction: row, @wrap: nowrap) {
+	-moz-flex-flow: @direction @wrap;
+	-ms-flex-direction: @direction;
+	-ms-flex-wrap: @wrap;
+	-webkit-flex-flow: @direction @wrap;
+	flex-flow: @direction @wrap;
+}
+
+.align-content(@alignment) {
+	-moz-align-content: @alignment;
+	-ms-align-content: @alignment;
+	-webkit-align-content: @alignment;
+	align-content: @alignment;
+}
+
+.flex-direction(@direction: row) {
+	-webkit-flex-direction: @direction;
+	-moz-flex-direction: @direction;
+	-ms-flex-direction: @direction;
+	flex-direction: @direction;
+}
+
+.flex-wrap(@wrap: nowrap) {
+	-webkit-flex-wrap: @wrap;
+	-moz-flex-wrap: @wrap;
+	-ms-flex-wrap: @wrap;
+	flex-wrap: @wrap;
+}

@@ -1,0 +1,121 @@
+@import "components.less";
+/*
+Typography styles
+*/
+
+body{
+	font-size: @font-size;
+	font-family: "din-2014", arial, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	@media @sm{
+	   font-size: 20px;
+	}
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	line-height: 1em;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
+}
+
+h1 {
+	font-size: 2.9rem;
+	line-height: 1;
+	letter-spacing: 0.3rem;
+	font-weight: 300;
+	margin-left: -8px;
+	@media @sm{
+		font-size: 3rem;
+	}
+	@media @md{
+		font-size: 4rem;
+	}
+	@media @lg{
+		font-size: 4.9rem;
+	}
+}
+
+h2 {
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	//text-transform: uppercase;
+	font-weight: 700;
+	@media @xs{
+		font-size: 1.2rem;
+	}
+	@media @sm{
+		font-size: 1.3rem;
+	}
+	&::after{
+		content: "";
+		width: 2rem;
+		@media @xs{
+			width: 4rem;
+		}
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: @colorWhite;
+		height: 1px;
+		display: block;
+		padding-top: 1rem;
+		margin-bottom: 0rem;
+		@media @xs{
+			padding-top: 3rem;
+			margin-bottom: 1rem;
+		}
+		@media @sm{
+			padding-top: 1rem;
+			margin-bottom: .5rem;
+		}
+		@media @md{
+			padding-top: 3rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+p{
+	line-height: 1.2rem;
+	@media @xs{
+		line-height: 1.5rem;
+	}
+	@media @sm{
+		line-height: 1.4rem;
+	}
+	@media @md{
+		line-height: 1.7rem;
+	}
+}
+
+.headline {
+	text-transform: uppercase;
+}
+
+.title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.subhead {}
+
+.caption {
+	font-size: 0.8rem;
+	color: @colorTextMeta;
+}
+
+.section-card-double-block p {
+	font-size: 16px;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "inbound-pro",
+  "version": "1.0.0",
+  "description": "Inbound Pro plugin",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test",
+    "sync": "sh scripts/sync.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://davidwells@github.com/inboundnow/inbound-pro.git"
+  },
+  "keywords": [
+    "cta",
+    "calls",
+    "to",
+    "action"
+  ],
+  "author": "Inbound Now",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/inboundnow/cta/issues"
+  },
+  "homepage": "https://github.com/inboundnow/cta",
+  "dependencies": {
+    "gulp-zip": "^4.0.0",
+    "uglify-js": "^3.0.23"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "fs": "0.0.2",
+    "grunt": "*",
+    "grunt-image-resize": "*",
+    "grunt-wp-readme-to-markdown": "^0.8.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-concat": "~2.1.7",
+    "gulp-copy": "0.0.2",
+    "gulp-filter": "~5.0.0",
+    "gulp-header": "^1.0.2",
+    "gulp-ignore": "^1.2.1",
+    "gulp-jshint": "^1.6.1",
+    "gulp-markdox": "^0.1.0",
+    "gulp-plumber": "~0.6.2",
+    "gulp-rename": "~1.1.0",
+    "gulp-run": "^1.7.1",
+    "gulp-uglify": "^3.0.0",
+    "jshint-stylish": "^0.2.0"
+  }
+}

@@ -1,0 +1,58 @@
+// Gradients
+// red to blue
+.gradientPrimary{
+    background: rgb(242,127,92);
+    background: -webkit-linear-gradient(bottom left, rgba(242,127,92,1) 0%, rgba(8,47,76,1) 100%);
+    background: -o-linear-gradient(bottom left, rgba(242,127,92,1) 0%, rgba(8,47,76,1) 100%);
+    background: linear-gradient(to top right, rgba(242,127,92,1) 0%, rgba(8,47,76,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f27f5c', endColorstr='#082f4c',GradientType=1 );
+}
+// turquoise to blue
+.gradientSecondary{
+    background: rgb(66,191,181); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(66,191,181,1) 0%, rgba(40,119,178,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(66,191,181,1) 0%,rgba(40,119,178,1) 100%);
+    background: linear-gradient(45deg, rgba(66,191,181,1) 0%,rgba(40,119,178,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42bfb5', endColorstr='#2877b2',GradientType=1 );
+}
+
+// Gradients
+.gradient(@default: #F5F5F5, @start: #EEE, @stop: #FFF) {
+	.linear-gradient-top(@default, @start, 0%, @stop, 100%);
+}
+
+.linear-gradient-top(@default, @color1, @stop1, @color2, @stop2) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(top, @color1 @stop1, @color2 @stop2);
+	background-image: linear-gradient(top, @color1 @stop1, @color2 @stop2);
+}
+
+.linear-gradient-top(@default, @color1, @stop1, @color2, @stop2, @color3, @stop3) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(top, @color1 @stop1, @color2 @stop2, @color3 @stop3);
+	background-image: linear-gradient(top, @color1 @stop1, @color2 @stop2, @color3 @stop3);
+}
+
+.linear-gradient-top(@default, @color1, @stop1, @color2, @stop2, @color3, @stop3, @color4, @stop4) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(top, @color1 @stop1, @color2 @stop2, @color3 @stop3, @color4 @stop4);
+	background-image: linear-gradient(top, @color1 @stop1, @color2 @stop2, @color3 @stop3, @color4 @stop4);
+}
+
+.linear-gradient-left(@default, @color1, @stop1, @color2, @stop2) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(left, @color1 @stop1, @color2 @stop2);
+	background-image: linear-gradient(left, @color1 @stop1, @color2 @stop2);
+}
+
+.linear-gradient-left(@default, @color1, @stop1, @color2, @stop2, @color3, @stop3) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(left, @color1 @stop1, @color2 @stop2, @color3 @stop3);
+	background-image: linear-gradient(left, @color1 @stop1, @color2 @stop2, @color3 @stop3);
+}
+
+.linear-gradient-left(@default, @color1, @stop1, @color2, @stop2, @color3, @stop3, @color4, @stop4) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(left, @color1 @stop1, @color2 @stop2, @color3 @stop3, @color4 @stop4);
+	background-image: linear-gradient(left, @color1 @stop1, @color2 @stop2, @color3 @stop3, @color4 @stop4);
+}

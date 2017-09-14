@@ -1,0 +1,55 @@
+@import "variables.less";
+/*
+Components styles
+*/
+.btn,
+.btn:visited {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 3.25rem;
+    padding: 0 1.3rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-width: 1px;
+    border-radius: .3rem;
+    border-style: solid;
+    font-weight: 700;
+    color: @colorWhite;
+    border-color: @colorWhite;
+    &:hover {
+        background-color: @colorWhite;
+        color: @colorBlack;
+    }
+    &.btn-white {
+        border-color: @colorWhite;
+        color: @colorWhite;
+        &:hover {
+            background-color: @colorWhite;
+            color: @colorBlack;
+        }
+    }
+    &.btn-blue {
+        border-color: @colorBlack;
+        color: @colorBlack;
+        &:hover {
+            background-color: @colorBlack;
+            color: @colorWhite;
+        }
+    }
+    &.btn-red {
+        border-color: @colorPrimary;
+        color: @colorPrimary;
+        &:hover {
+            background-color: @colorPrimary;
+            color: @colorWhite;
+        }
+    }
+    &.btn-noborder{
+        border: none;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
